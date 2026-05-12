@@ -65,8 +65,8 @@ void Visualizer::UpdateMarker(const rclcpp::Time& current_time,
 
 int main(int argc, char* argv[])
 {
-    std::string node_name = "visualizer";
-    double loop_rate = 10.0;
+    std::string node_name = "hmi";
+    double loop_rate = 60.0;
 
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<Visualizer>(node_name, loop_rate));
